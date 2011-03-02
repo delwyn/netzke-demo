@@ -9,12 +9,14 @@ gem 'haml'
 gem 'coderay'
 gem 'faker'
 
-gem 'netzke-core',        :path => File.expand_path('../vendor/gems/netzke-core', __FILE__)
-gem 'netzke-basepack',    :path => File.expand_path('../vendor/gems/netzke-basepack', __FILE__)
+gem 'netzke-core', :git => "git://github.com/delwyn/netzke-core.git", :branch => "excel_export"
+gem 'netzke-basepack', :git => "git://github.com/delwyn/netzke-basepack.git", :branch => "excel_export"
+# gem 'netzke-core',        :path => File.expand_path('../vendor/gems/netzke-core', __FILE__)
+# gem 'netzke-basepack',    :path => File.expand_path('../vendor/gems/netzke-basepack', __FILE__)
 gem 'netzke-persistence', :path => File.expand_path('../vendor/gems/netzke-persistence', __FILE__)
 
 gem 'inploy'
-
+gem 'spreadsheet'
 gem 'will_paginate', '~>3.0.pre2'
 
 group :profiling do

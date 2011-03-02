@@ -1,16 +1,20 @@
-PATH
-  remote: vendor/gems/netzke-basepack
+GIT
+  remote: git://github.com/delwyn/netzke-basepack.git
+  revision: 4009aaa2235e2a5dead35b6dd1e4729a79d7feb4
+  branch: excel_export
   specs:
-    netzke-basepack (0.6.5)
+    netzke-basepack (0.6.4)
       acts_as_list
       meta_where (>= 0.9.3)
-      netzke-core (~> 0.6.7)
+      netzke-core (~> 0.6.4)
       will_paginate (~> 3.0.pre2)
 
-PATH
-  remote: vendor/gems/netzke-core
+GIT
+  remote: git://github.com/delwyn/netzke-core.git
+  revision: 8367aee8dbda76bee2d760a31e39dcfc39aa84c0
+  branch: excel_export
   specs:
-    netzke-core (0.6.7)
+    netzke-core (0.6.6)
       activesupport (>= 3.0.1)
 
 PATH
@@ -64,10 +68,10 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    meta_where (1.0.3)
-      activerecord (~> 3.0.4)
-      activesupport (~> 3.0.4)
-      arel (~> 2.0.8)
+    meta_where (1.0.4)
+      activerecord (~> 3.0.0)
+      activesupport (~> 3.0.0)
+      arel (~> 2.0.7)
     mime-types (1.16)
     mysql2 (0.2.6)
     open4 (1.0.1)
@@ -96,6 +100,9 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.4)
     rake (0.8.7)
+    ruby-ole (1.2.11.1)
+    spreadsheet (0.6.5.2)
+      ruby-ole (>= 1.0)
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
@@ -116,4 +123,5 @@ DEPENDENCIES
   netzke-persistence!
   rack-perftools_profiler (~> 0.1)
   rails (= 3.0.4)
+  spreadsheet
   will_paginate (~> 3.0.pre2)
