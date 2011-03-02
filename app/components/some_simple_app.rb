@@ -103,14 +103,16 @@ class SomeSimpleApp < Netzke::Basepack::SimpleApp
     :model => "Boss",
     :lazy_loading => true,
     :title => "Bosses",
-    :persistence => true
+    :persistence => true,
+    :enable_export => true
 
   component :clerks,
     :class_name => "Basepack::GridPanel",
     :model => "Clerk",
     :lazy_loading => true,
     :title => "Clerks",
-    :persistence => true
+    :persistence => true,
+    :enable_export => true
 
   component :customized_clerks,
     :class_name => "ClerkGrid",
